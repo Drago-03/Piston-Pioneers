@@ -1,0 +1,1 @@
+C:\Users\mante\OneDrive\Desktop\Workspace\ArduinoControllerApp\AndroidStudioProjects\app\build\intermediates\cxx\RelWithDebInfo\4q6y5t2i\obj\x86
