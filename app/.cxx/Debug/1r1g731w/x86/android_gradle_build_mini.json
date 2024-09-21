@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\mante\\OneDrive\\Desktop\\Workspace\\ArduinoControllerApp\\AndroidStudioProjects\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\mante\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\mante\\OneDrive\\Desktop\\Workspace\\ArduinoControllerApp\\AndroidStudioProjects\\app\\.cxx\\Debug\\1r1g731w\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\mante\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\mante\\OneDrive\\Desktop\\Workspace\\ArduinoControllerApp\\AndroidStudioProjects\\app\\.cxx\\Debug\\1r1g731w\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "arduinocontrollerapp::@6890427a1f51a3e7e1df": {
+      "artifactName": "arduinocontrollerapp",
+      "abi": "x86",
+      "output": "C:\\Users\\mante\\OneDrive\\Desktop\\Workspace\\ArduinoControllerApp\\AndroidStudioProjects\\app\\build\\intermediates\\cxx\\Debug\\1r1g731w\\obj\\x86\\libarduinocontrollerapp.so",
+      "runtimeFiles": []
+    }
+  }
+}
