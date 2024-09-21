@@ -1,0 +1,3 @@
+C:/Users/mante/OneDrive/Desktop/Workspace/ArduinoControllerApp/AndroidStudioProjects/app/.cxx/Debug/1r1g731w/x86/CMakeFiles/arduinocontrollerapp.dir
+C:/Users/mante/OneDrive/Desktop/Workspace/ArduinoControllerApp/AndroidStudioProjects/app/.cxx/Debug/1r1g731w/x86/CMakeFiles/edit_cache.dir
+C:/Users/mante/OneDrive/Desktop/Workspace/ArduinoControllerApp/AndroidStudioProjects/app/.cxx/Debug/1r1g731w/x86/CMakeFiles/rebuild_cache.dir
