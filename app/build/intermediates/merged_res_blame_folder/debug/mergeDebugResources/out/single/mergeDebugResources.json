@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/xml_backup_rules.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/layout-land_activity_main.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/layout-land/activity_main.xml"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.arduinocontrollerapp-debug-60:/layout_activity_main.xml.flat",
+        "source": "com.example.arduinocontrollerapp-main-62:/layout/activity_main.xml"
+    }
+]

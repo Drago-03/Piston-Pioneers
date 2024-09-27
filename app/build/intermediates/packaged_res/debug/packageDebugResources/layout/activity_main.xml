@@ -1,0 +1,198 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ZORO Control Panel Heading with Bike Emoji Centered -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/headingZoroControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZORO Control Panel"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center" />
+
+            <!-- Bike Emoji or GIF next to ZORO Control Panel -->
+        </LinearLayout>
+
+        <!-- Online/Offline Status -->
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_below="@id/headingZoroControl"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <!-- Oval Start Engine Button -->
+        <Button
+            android:id="@+id/btnStartEngine"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Start Engine"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/connectionStatus"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Oval Stop Engine Button -->
+        <Button
+            android:id="@+id/btnStopEngine"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Stop Engine"
+            android:backgroundTint="#F44336"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnStartEngine"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Oval LED Indicators Button -->
+        <Button
+            android:id="@+id/btnControlRelay"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="LED Indicators"
+            android:backgroundTint="#FF9800"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnStopEngine"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Google Maps for GPS Tracking -->
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/btnControlRelay"
+            android:layout_marginTop="20dp" />
+
+        <!-- GPS Location TextView -->
+        <TextView
+            android:id="@+id/tvGpsLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS Location: Unknown"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Specs Section Placeholder (Scrollable) -->
+        <LinearLayout
+            android:id="@+id/specsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_below="@id/tvGpsLocation"
+            android:layout_marginTop="40dp">
+
+            <!-- Specs Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specs"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Placeholder for Specs (To Be Added Later) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specs will be added here later."
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <!-- About Section (Below Specs) -->
+        <LinearLayout
+            android:id="@+id/aboutSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/specsSection"
+            android:padding="20dp"
+            android:layout_marginTop="40dp">
+
+            <!-- About Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About This App"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Interactive Doodles -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doodle_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+
+            <!-- About Section Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This app is built for controlling various functions of a bike, including engine control, LED indicators, and GPS tracking."
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <!-- Author Mark -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piston Pioneers"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
