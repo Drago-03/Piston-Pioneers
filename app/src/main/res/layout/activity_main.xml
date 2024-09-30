@@ -1,0 +1,270 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ZORO Control Panel Heading with Bike Emoji Centered -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/headingZoroControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZORO Control Panel"
+                android:textStyle="bold|italic"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center" />
+
+            <!-- Bike Emoji or GIF next to ZORO Control Panel -->
+        </LinearLayout>
+
+        <!-- Online/Offline Status -->
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_below="@id/headingZoroControl"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="NotSibling" />
+
+        <!-- Oval Start Engine Button -->
+        <Button
+            android:id="@+id/btnStartEngine"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Start Engine"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/connectionStatus"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Oval Stop Engine Button -->
+        <Button
+            android:id="@+id/btnStopEngine"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Stop Engine"
+            android:backgroundTint="#F44336"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnStartEngine"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Oval LED Indicators Button -->
+        <Button
+            android:id="@+id/btnControlRelay"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="LED Indicators"
+            android:backgroundTint="#FF9800"
+            android:textColor="#000000"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnStopEngine"
+            android:layout_marginTop="20dp"
+            android:shape="oval"/>
+
+        <!-- Google Maps for GPS Tracking -->
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/btnControlRelay"
+            android:layout_marginTop="20dp" />
+
+        <!-- GPS Location TextView -->
+        <TextView
+            android:id="@+id/tvGpsLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS Location: Unknown"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Specs Section with Proper List -->
+        <LinearLayout
+            android:id="@+id/specsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_below="@id/tvGpsLocation"
+            android:layout_marginTop="40dp">
+
+            <!-- Specs Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specifications"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Specifications List -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Displacement: 149.5 cc"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Of Gears: 5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torque: 13 NM (Stock)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tank: 4L"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power: 12 HP (Stock)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body: Dirt Bike"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheelbase: 1540 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerb Weight: 132 KG"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspension Front: Telescopic Anti-Friction Bush (spaced)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspension Rear: Monoshock"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Length: 2098 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ground Clearance: 338 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Height: 850 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Width: 750 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Height: 1246 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tyre Size: Front - 80/100-17, Back - 100/80-17"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rear Brake Diameter: 130 mm"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clutch Type: Multiplate (Wet)"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- About Section (Below Specs) -->
+        <LinearLayout
+            android:id="@+id/aboutSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/specsSection"
+            android:padding="20dp"
+            android:layout_marginTop="40dp">
+
+            <!-- About Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About This App"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Interactive Doodles -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/doodle_image" />
